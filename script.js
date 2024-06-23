@@ -1,5 +1,4 @@
 let currentInput = '0';
-let currentInput = '0';
 
 function appendToDisplay(value) {
     if (currentInput === '0' && value !== '.') {
