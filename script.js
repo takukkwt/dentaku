@@ -1,5 +1,4 @@
 let currentInput = '0';
-let operatorClicked = false;
 
 function appendToDisplay(value) {
     if (currentInput === '0' && value !== '.') {
@@ -8,7 +7,6 @@ function appendToDisplay(value) {
         currentInput += value;
     }
     document.getElementById('display').textContent = currentInput;
-    operatorClicked = false;
 }
 
 function clearDisplay() {
@@ -24,5 +22,4 @@ function calculate() {
         currentInput = 'Error';
         document.getElementById('display').textContent = currentInput;
     }
-    operatorClicked = false;
 }
