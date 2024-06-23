@@ -25,7 +25,7 @@ body {
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 15px;
-    font-size: 2em;
+    font-size: 2.5em; /* より大きなフォントサイズ */
     width: 100%;
     box-sizing: border-box;
     text-align: right;
@@ -66,13 +66,25 @@ body {
     border-color: #f2a900;
 }
 
-.buttons button.clear {
+.buttons button.cl {
     background-color: #e74c3c;
     color: #fff;
     border-color: #e74c3c;
 }
 
-.buttons button.equal {
+.buttons button.ac {
+    background-color: #3498db;
+    color: #fff;
+    border-color: #3498db;
+}
+
+.buttons button.bs {
+    background-color: #95a5a6;
+    color: #fff;
+    border-color: #95a5a6;
+}
+
+.buttons button.eq {
     background-color: #2ecc71;
     color: #fff;
     border-color: #2ecc71;
@@ -83,12 +95,22 @@ body {
     border-color: #e69200;
 }
 
-.buttons button.clear:hover {
+.buttons button.cl:hover {
     background-color: #c0392b;
     border-color: #c0392b;
 }
 
-.buttons button.equal:hover {
+.buttons button.ac:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.buttons button.bs:hover {
+    background-color: #7f8c8d;
+    border-color: #7f8c8d;
+}
+
+.buttons button.eq:hover {
     background-color: #27ae60;
     border-color: #27ae60;
 }
