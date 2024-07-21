@@ -37,4 +37,3 @@ dentaku/
 バグ報告や機能リクエストは、[Issues](https://github.com/takukkwt/dentaku/issues)を通じて行ってください。プルリクエストも歓迎します。
 ```
 
-このREADME.mdファイルを`dentaku`リポジトリに追加すれば完了です。他に追加したい情報や修正したい箇所があれば教えてください。
