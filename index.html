@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dentaku</title>
+  <title>ロゴページ</title>
   <style>
     body {
       background-image: url('space-background.jpg');
       background-size: cover;
+      animation: moveBackground 10s linear infinite; /* 背景を動かすアニメーション */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -13,19 +14,32 @@
       margin: 0;
     }
 
+    @keyframes moveBackground {
+      from { background-position: 0 0; }
+      to { background-position: 100% 0; }
+    }
+
     .container {
       text-align: center;
+      position: relative; /* ロゴを背景にするために必要 */
     }
 
     .logo {
-      filter: blur(5px);
       width: 300px; /* 適宜調整 */
     }
 
+    .logo-blur {
+      position: absolute;
+      top: 0;
+      left: 0;
+      filter: blur(5px);
+      z-index: -1; /* 背景に配置 */
+    }
+
     .enter-button {
-      background-color: transparent;
+      background-color: #007bff; /* 青色 */
       color: white;
-      border: 2px solid white;
+      border: none;
       padding: 10px 20px;
       font-size: 18px;
       cursor: pointer;
@@ -35,6 +49,7 @@
 </head>
 <body>
   <div class="container">
+    <img src="logo.png" alt="ロゴ" class="logo logo-blur">
     <img src="logo.png" alt="ロゴ" class="logo">
     <button onclick="location.href='dentaku.html'" class="enter-button">Enter</button>
   </div>
